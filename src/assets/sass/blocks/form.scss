@@ -1,0 +1,86 @@
+/* form */
+
+.form {
+    width: 320px;
+    background: #612EF7;
+    margin: 0 auto;
+    border-radius: 0 0 50% 50% / 0 0 20% 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    padding: 100px 0 60px;
+    box-shadow: 0 20px 40px #D1C2FF;
+
+    
+    &--title {
+        font-size: 28px;
+        color: #FDFDFF;
+        margin: 0 0 37px;
+    }
+
+    &--login, &--password {
+        border: 0;
+        width: 296px;
+        height: 48px;
+        border-radius: 5px;
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+        font-size: 18px;
+
+        &::placeholder {
+            font-weight: normal;
+            font-size: 18px;
+            color: #868686;
+        }
+
+        &-margin {
+            margin: 7px 0;
+        }
+    }
+
+    &--submit {
+        border: 2px solid #fff;
+        background: transparent;
+        color: #FDFDFF;
+        width: 225px;
+        height: 46px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+
+        &-margin {
+            margin: 31px 0;
+        }
+    }
+
+    &--submit:hover {
+        color: #612EF7;
+        background: #FDFDFF;
+    }
+
+    &--register, &--forget {
+        color: #FDFDFF;
+        font-size: 16px;
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: 1px solid #fff;
+
+        &-margin {
+            margin: 7px 0 0;
+        }
+    }
+
+    &--forget {
+        border-bottom-style: dashed;
+    }
+
+    &--register:hover, &--forget:hover {
+        color: #ccc;
+        border-bottom-color: #ccc;
+    }
+
+
+}

@@ -1,4 +1,5 @@
 /* Default styles */
+/* vars */
 *,
 *:before,
 *:after {
@@ -9,13 +10,126 @@
 }
 
 body {
-    font-family: Cera Pro;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-style: normal;
-    background: #E5E5E5;
-    color: #455273;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+  /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
-/*block*/
-body {
-    font-size: 24px;
+/* form */
+.form {
+    width: 320px;
+    background: #612EF7;
+    margin: 0 auto;
+    border-radius: 0 0 50% 50% / 0 0 20% 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0 60px;
+    box-shadow: 0 20px 40px #D1C2FF;
+}
+
+.form--title {
+    font-size: 28px;
+    color: #FDFDFF;
+    margin: 0 0 37px;
+}
+
+.form--login, .form--password {
+    border: 0;
+    width: 296px;
+    height: 48px;
+    border-radius: 5px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form--login::-moz-placeholder, .form--password::-moz-placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    color: #868686;
+}
+
+.form--login:-ms-input-placeholder, .form--password:-ms-input-placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    color: #868686;
+}
+
+.form--login::-ms-input-placeholder, .form--password::-ms-input-placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    color: #868686;
+}
+
+.form--login::placeholder, .form--password::placeholder {
+    font-weight: normal;
+    font-size: 18px;
+    color: #868686;
+}
+
+.form--login-margin, .form--password-margin {
+    margin: 7px 0;
+}
+
+.form--submit {
+    border: 2px solid #fff;
+    background: transparent;
+    color: #FDFDFF;
+    width: 225px;
+    height: 46px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form--submit-margin {
+    margin: 31px 0;
+}
+
+.form--submit:hover {
+    color: #612EF7;
+    background: #FDFDFF;
+}
+
+.form--register, .form--forget {
+    color: #FDFDFF;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+}
+
+.form--register-margin, .form--forget-margin {
+    margin: 7px 0 0;
+}
+
+.form--forget {
+    border-bottom-style: dashed;
+}
+
+.form--register:hover, .form--forget:hover {
+    color: #ccc;
+    border-bottom-color: #ccc;
+}
+
+/* footer */
+.footer {
+    background: transparent;
+    text-align: center;
+}
+
+.footer--text {
+    color: #030303;
+    padding: 50px 0 30px;
 }

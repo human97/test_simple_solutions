@@ -1,0 +1,10 @@
+/* footer */
+
+.footer {
+    background: transparent;
+    text-align: center;
+    &--text {
+        color: #030303;
+        padding: 50px 0 30px;
+    }
+}

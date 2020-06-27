@@ -1,8 +1,6 @@
 /* Default styles */
 
-$bg-body: #E5E5E5;
-$bg-color: #F5F8FF;
-$font: Cera Pro;
+@import 'src/assets/sass/vars.scss';
 
 *,
 *:before,
@@ -17,7 +15,15 @@ body {
     font-family: $font;
     font-style: normal;
     background: $bg-body;
-    color: #455273;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
 }
 
-@import 'src/assets/sass/blocks/block.scss';
+
+@import 'src/assets/sass/blocks/form.scss';
+@import 'src/assets/sass/blocks/footer.scss';
