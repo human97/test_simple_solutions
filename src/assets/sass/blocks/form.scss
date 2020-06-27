@@ -19,6 +19,8 @@
         margin: 0 0 37px;
     }
 
+
+    /* inputs */
     &--login, &--password {
         border: 0;
         width: 296px;
@@ -38,8 +40,14 @@
         &-margin {
             margin: 7px 0;
         }
+
+        &:focus {
+            border: 2px solid #00ff15;
+        }
     }
 
+
+    /* button submit */
     &--submit {
         border: 2px solid #fff;
         background: transparent;
@@ -54,13 +62,16 @@
         &-margin {
             margin: 31px 0;
         }
+
+        &:hover {
+            color: #612EF7;
+            background: #FDFDFF;
+        }
     }
 
-    &--submit:hover {
-        color: #612EF7;
-        background: #FDFDFF;
-    }
 
+
+    /* links */
     &--register, &--forget {
         color: #FDFDFF;
         font-size: 16px;
@@ -81,6 +92,5 @@
         color: #ccc;
         border-bottom-color: #ccc;
     }
-
 
 }

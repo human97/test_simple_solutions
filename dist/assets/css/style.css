@@ -14,7 +14,7 @@ body {
     font-style: normal;
     background: #fff;
     display: flex;
-    justify-content: center;
+  /* justify-content: center; */
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
@@ -34,6 +34,9 @@ body {
     flex-direction: column;
     padding: 100px 0 60px;
     box-shadow: 0 20px 40px #D1C2FF;
+  /* inputs */
+  /* button submit */
+  /* links */
 }
 
 .form--title {
@@ -79,6 +82,10 @@ body {
 
 .form--login-margin, .form--password-margin {
     margin: 7px 0;
+}
+
+.form--login:focus, .form--password:focus {
+    border: 2px solid #00ff15;
 }
 
 .form--submit {
